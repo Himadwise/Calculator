@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 400px;
+    background-color: #585f6e;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.calc-input {
+    width: 100%;
+    font-size: 35px;
+    border: none;
+    padding: 10px;
+    text-align: right;
+    background-color: #585f6e;
+    color: #54b662;
+}
+
+#ope-input {
+    font-size: 20px;
+    color: #fff;
+}
+
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.equal {
+    grid-column: span 2;
+    border-radius: 50px;
+}
+
+button {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 45%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccddce;
+}
+
+.operation {
+    background-color: #54b662;
+    color: #fff;
+}
+
+.operation:hover {
+    background-color: #7bc286;
+}
+
+.history-page {
+    position: absolute;
+    width: 380px;
+    background-color: #4daf5b;
+    height: 405px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    overflow-y: auto;
+    display: none;
+}
+
+.history-page.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-icon {
+    font-size: 30px;
+    position: relative;
+    color: #fff;
+    left: 2%;
+    cursor: pointer;
+}
+
+.history-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calc-his{
+    width: 100%;
+    border: none;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+    background:transparent;
+    color: #fff;
+}
+.history-element{
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.history-element:hover{
+    background-color: #239734;
+    cursor: pointer;
+}
+.fa-trash:hover{
+    cursor: pointer;
+}
